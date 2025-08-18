@@ -1,0 +1,42 @@
+{
+  "env": {
+    "base_url": "https://demo.nopcommerce.com",
+    "browser": "chrome",
+    "headless": false,
+    "implicit_wait": 0,
+    "explicit_wait": 10,
+    "page_load_timeout": 30
+  },
+  "routes": {
+    "home": "/",
+    "login": "/login?returnurl=%2F",
+    "register": "/register?returnurl=%2F"
+  },
+  "users": {
+    "valid": [
+      {
+        "email": "demo_user@example.com",
+        "password": "Demo@1234"
+      }
+    ],
+    "invalid": [
+      {
+        "email": "wrong@example.com",
+        "password": "Wrong@123"
+      }
+    ]
+  },
+  "registration": {
+    "defaults": {
+      "gender": "M",
+      "first_name": "Mahmoud",
+      "last_name": "Magdy",
+      "email": "mmagdy@gmail.com",
+      "company": "QA Co",
+      "password": "Auto@1234",
+      "newsletter": true
+    },
+    "email_domain": "example.com",
+    "email_prefix": "autouser"
+  }
+}
